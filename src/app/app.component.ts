@@ -148,6 +148,7 @@ ngOnInit(): void {
     }
 
     this.questions[index].employee = this.myControl.value ? this.myControl.value : '';
+    this.questions[index].departamento = this.departamentoSelected;
     this.questionNo = this.questionNo + 1;
 
     if(this.questionNo == 7)
