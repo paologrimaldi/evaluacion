@@ -83,17 +83,17 @@
                  </ul>               
                  <br />
                    <div class="colorPalette slowfloat3s">
-                    <div class="box zero">0</div>
-                    <div class="box one">1</div>
-                    <div class="box two">2</div>
-                    <div class="box three">3</div>
-                    <div class="box four">4</div>
-                    <div class="box five">5</div>
-                    <div class="box six">6</div>
-                    <div class="box seven">7</div>
-                    <div class="box eight">8</div>
-                    <div class="box nine">9</div>
-                    <div class="box ten">10</div>
+                    <div class="box zero nonPointer">0</div>
+                    <div class="box one nonPointer">1</div>
+                    <div class="box two nonPointer">2</div>
+                    <div class="box three nonPointer">3</div>
+                    <div class="box four nonPointer">4</div>
+                    <div class="box five nonPointer">5</div>
+                    <div class="box six nonPointer">6</div>
+                    <div class="box seven nonPointer">7</div>
+                    <div class="box eight nonPointer">8</div>
+                    <div class="box nine nonPointer">9</div>
+                    <div class="box ten nonPointer">10</div>
                    </div>
                    <div class="redline"></div>
                    <mat-form-field class="example-full-width">
@@ -119,7 +119,7 @@
           
                     <div *ngFor="let question of questions; let i = index">
                       <div class="question" *ngIf="i == questionNo">
-                        <strong *ngIf="question.text != 'Puntos positivos' && question.text != 'Puntos de mejora'">{{question.text}}</strong>
+                        <strong class="questionText" *ngIf="question.text != 'Puntos positivos' && question.text != 'Puntos de mejora'">{{question.text}}</strong>
                         <div class="colorPalette mt-4" *ngIf="question.text != 'Puntos positivos' && question.text != 'Puntos de mejora'">
                           <div class="box zero" (click)="setAnswer(i, 0)" [ngClass]="{'selected': question.answer === 0}">0</div>
                           <div class="box one" (click)="setAnswer(i, 1)" [ngClass]="{'selected': question.answer === 1}">1</div>
@@ -136,14 +136,14 @@
                         <mat-form-field *ngIf="question.text == 'Puntos positivos'" class="example-full-width">
                           <mat-label>Puntos positivos</mat-label>
                           <textarea   [formControl]="puntospositivos" matInput placeholder="Anote puntos positivos..."></textarea>
-                          <button mat-button (click)="setAnswer(i,98)" color="accent">Continuar</button>
+                          <button mat-button [disabled]="!puntospositivos.valid" (click)="setAnswer(i,98)" color="accent">Continuar</button>
                         </mat-form-field>
 
 
                         <mat-form-field *ngIf="question.text == 'Puntos de mejora'" class="example-full-width">
                           <mat-label>Puntos de mejora</mat-label>
                           <textarea    [formControl]="puntosdemejora" matInput placeholder="Anote puntos de mejora..."></textarea>
-                          <button mat-button (click)="setAnswer(i,99)" color="accent">Continuar</button>
+                          <button mat-button [disabled]="!puntosdemejora.valid"  (click)="setAnswer(i,99)" color="accent">Continuar</button>
                         </mat-form-field>
                       </div>
                     </div>
