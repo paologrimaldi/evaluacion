@@ -56,8 +56,9 @@
                 <div class="col-12">
                
                 <div class="card-body">
-
-                  <div id="Intro" *ngIf="!hasStarted">
+                  <div *ngIf=" this.departamentoSelected == undefined"><h3 >Formulario inválido</h3><p>Por favor acceda a este formulario utilizando un QR válido</p></div>
+                  
+                  <div id="Intro" *ngIf="!hasStarted && this.departamentoSelected != undefined">
                   <h5 class="card-title">
                     Evaluación de Cultura Cotyssa
                   </h5>
@@ -155,7 +156,7 @@
 
                   <button *ngIf="questionNo == 28" (click)="save()" class="glass-button mt-2 float-end">Grabar</button>
                 
-                   <button *ngIf="!hasStarted" (click)="start()" class="glass-button mt-2 float-end">Continuar</button>
+                   <button [disabled]="!myControl.valid" *ngIf="!hasStarted" (click)="start()" [ngClass]="myControl.valid ? 'glass-button mt-2 float-end':'glass-button disabled mt-2 float-end'">Continuar</button>
                 </div>
             </div>
             </div>

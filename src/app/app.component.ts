@@ -4,7 +4,7 @@ import { ActivatedRoute, RouterOutlet } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faDisease } from "@fortawesome/free-solid-svg-icons";
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FormControl, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -26,7 +26,7 @@ import Chart from 'chart.js/auto';
 })
 export class AppComponent implements OnInit {
   faDisease = faDisease;
-  myControl = new FormControl('');
+  myControl = new FormControl('', Validators.required);
   puntospositivos = new FormControl('');
     puntosdemejora = new FormControl('');
   title = 'evaluacion';

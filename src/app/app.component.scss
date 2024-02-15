@@ -191,8 +191,11 @@ h5
     cursor: pointer;
     
   }
-  
-  .glass-button:hover {
+ 
+  .disabled{
+    background-color: #6e6e6e;
+  }
+  .glass-button:hover:not(.disabled) {
     background-color: #EF4A31;
   }
 i
