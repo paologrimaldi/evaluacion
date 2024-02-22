@@ -31,36 +31,36 @@ export class AppComponent implements OnInit {
     puntosdemejora = new FormControl('', Validators.required);
   title = 'evaluacion';
   hasStarted = false;
-  questions = [{text: '1. ¿Está abierto a la crítica constructiva?', answer: 0, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
-   {text: '2. ¿Aprende de sus errores y busca la lección en cada problema?', answer: 0, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''}, 
-   {text: '3. ¿Trasmite sus conocimientos para que otros aprendan?', answer: 0, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''}, 
-   {text: '4. ¿Busca crecimiento personal y profesional?', answer: 0, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
-    {text: '5. ¿Muestra capacidad y deseo de afrontar retos nuevos?', answer: 0, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
+  questions = [{text: '1. ¿Está abierto a la crítica constructiva?', answer: -1, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
+   {text: '2. ¿Aprende de sus errores y busca la lección en cada problema?', answer: -1, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''}, 
+   {text: '3. ¿Trasmite sus conocimientos para que otros aprendan?', answer: -1, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''}, 
+   {text: '4. ¿Busca crecimiento personal y profesional?', answer: -1, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
+    {text: '5. ¿Muestra capacidad y deseo de afrontar retos nuevos?', answer: -1, employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
     {text: 'Puntos positivos', answer: '', employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
     {text: 'Puntos de mejora', answer: '', employee: '',valor:'Aprendizaje continuo',departamento:'',fecha: ''},
 
-    {text: '1. ¿Brinda un servicio al cliente interno y externo de excelencia?', answer: 0, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
-    {text: '2. ¿Esta dispuesto apoyar a otras áreas, aunque no sea su responsabilidad directa?', answer: 0, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''}, 
-    {text: '3. ¿Siempre está pendiente de sus herramientas de comunicación?', answer: 0, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''}, 
-    {text: '4. ¿Esta dispuesto en dar tiempo extra para finalizar el trabajo?', answer: 0, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
-    {text: '5. ¿Planifica ejecución y da seguimiento de forma óptima?', answer: 0, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
+    {text: '1. ¿Brinda un servicio al cliente interno y externo de excelencia?', answer: -1, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
+    {text: '2. ¿Esta dispuesto apoyar a otras áreas, aunque no sea su responsabilidad directa?', answer: -1, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''}, 
+    {text: '3. ¿Siempre está pendiente de sus herramientas de comunicación?', answer: -1, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''}, 
+    {text: '4. ¿Esta dispuesto en dar tiempo extra para finalizar el trabajo?', answer: -1, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
+    {text: '5. ¿Planifica ejecución y da seguimiento de forma óptima?', answer: -1, employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
     {text: 'Puntos positivos', answer: '', employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
     {text: 'Puntos de mejora', answer: '', employee: '',valor:'Disponibilidad',departamento:'',fecha: ''},
 
 
-  {text: '1. ¿Busca soluciones a la medida del cliente interno y externo?', answer: 0, employee: '',valor:'Innovación',departamento:'',fecha: ''},
-  {text: '2. ¿Busca maneras y soluciones para hacer los procesos más eficientes y efectivos?', answer: 0, employee: '',valor:'Innovación',departamento:'',fecha: ''},
-  {text: '3. ¿Es persistente y está abierto a los cambios que puedan surgir en el proceso?', answer: 0, employee: '',valor:'Innovación',departamento:'',fecha: ''},
-  {text: '4. ¿No tiene miedo a aprender y utiliza las herramientas de trabajo que están a la vanguardia?', answer: 0, employee: '',valor:'Innovación',departamento:'',fecha: ''},
-  {text: '5. ¿Busca crear relaciones de confianza, compromiso y cercanas, generando alianzas personalizadas?', answer: 0, employee: '',valor:'Innovación',departamento:'',fecha: ''},
+  {text: '1. ¿Busca soluciones a la medida del cliente interno y externo?', answer: -1, employee: '',valor:'Innovación',departamento:'',fecha: ''},
+  {text: '2. ¿Busca maneras y soluciones para hacer los procesos más eficientes y efectivos?', answer: -1, employee: '',valor:'Innovación',departamento:'',fecha: ''},
+  {text: '3. ¿Es persistente y está abierto a los cambios que puedan surgir en el proceso?', answer: -1, employee: '',valor:'Innovación',departamento:'',fecha: ''},
+  {text: '4. ¿No tiene miedo a aprender y utiliza las herramientas de trabajo que están a la vanguardia?', answer: -1, employee: '',valor:'Innovación',departamento:'',fecha: ''},
+  {text: '5. ¿Busca crear relaciones de confianza, compromiso y cercanas, generando alianzas personalizadas?', answer: -1, employee: '',valor:'Innovación',departamento:'',fecha: ''},
   {text: 'Puntos positivos', answer: '', employee: '',valor:'Innovación',departamento:'',fecha: ''},
     {text: 'Puntos de mejora', answer: '', employee: '',valor:'Innovación',departamento:'',fecha: ''},
 
-  {text: '1. ¿Mantiene un comunicación constante y efectiva con todo el equipo?', answer: 0, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
-  {text: '2. ¿Trasmite la información de manera clara, especifica y concisa?', answer: 0, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
-  {text: '3. ¿Tiene claro y respetas las jerarquías?', answer: 0, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
-  {text: '4. ¿Esta dispuesto a escuchar para entender y mejorar?', answer: 0, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
-  {text: '5. ¿Comparte sus ideas y su opinión de manera constructiva?', answer: 0, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
+  {text: '1. ¿Mantiene un comunicación constante y efectiva con todo el equipo?', answer: -1, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
+  {text: '2. ¿Trasmite la información de manera clara, especifica y concisa?', answer: -1, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
+  {text: '3. ¿Tiene claro y respetas las jerarquías?', answer: -1, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
+  {text: '4. ¿Esta dispuesto a escuchar para entender y mejorar?', answer: -1, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
+  {text: '5. ¿Comparte sus ideas y su opinión de manera constructiva?', answer: -1, employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
   {text: 'Puntos positivos', answer: '', employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
   {text: 'Puntos de mejora', answer: '', employee: '',valor:'Trabajo en equipo',departamento:'',fecha: ''},
 
@@ -72,6 +72,7 @@ departamentoSelected: string = '';
 filteredEmployees: Array<any> = [];
     summary: any = {};
     public chart: any;
+    currentQuestionAnswered: boolean = false;
 constructor(private api: ApiService,private _snackBar: MatSnackBar,private router: ActivatedRoute)
 {
 }
@@ -136,11 +137,13 @@ ngOnInit(): void {
     {
         this.questions[index].answer = this.puntosdemejora.value == null ? '' : this.puntosdemejora.value;
         this.puntosdemejora.reset();
+        this.advanceQuestion();
     }
     else if (answer == 98)
     {
         this.questions[index].answer = this.puntospositivos.value == null ? '' : this.puntospositivos.value;
         this.puntospositivos.reset();
+        this.advanceQuestion();
     }
     else
     {
@@ -150,6 +153,14 @@ ngOnInit(): void {
     this.questions[index].employee = this.myControl.value ? this.myControl.value : '';
     this.questions[index].departamento = this.departamentoSelected;
     this.questions[index].fecha = new Date().toLocaleDateString();
+   
+    this.currentQuestionAnswered = true;    
+
+  }
+
+
+  public advanceQuestion()
+  {
     this.questionNo = this.questionNo + 1;
 
     if(this.questionNo == 7)
@@ -195,10 +206,8 @@ ngOnInit(): void {
         this.createChart();
 
     }
-
+    this.currentQuestionAnswered = false;  
   }
-
-
   
   public save()
   {

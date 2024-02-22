@@ -58,8 +58,9 @@ body
  // background: rgb(0,159,231);
  // background: linear-gradient(326deg, #EF4A31 0%, #FAAE41 15%, #4F5251 50%, #231F20 100%);
   background-image: url("./assets/img/background_innovacion.jpg") !important;
-  background-repeat:no-repeat;
-  background-size: 100%;
+  background-repeat:repeat-y;
+  background-size:cover;
+
   min-height: 100%;
   font-family: "Nunito","Helvetica Neue" sans-serif; 
 }
