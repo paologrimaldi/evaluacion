@@ -11,33 +11,33 @@
         <div class="jelly-card">
         
 				  <div class="card py-3">
-            @if (valorNo == 1) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/aprendizaje.jpeg" width="95%"  alt="Glassmorphic Image"> }
-            @if (valorNo == 2) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/disponibilidad.jpeg" width="95%"  alt="Glassmorphic Image"> }
-            @if (valorNo == 3) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/Innovacion.jpeg" width="95%"  alt="Glassmorphic Image"> }
-            @if (valorNo == 4) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/Trabajoenequipo.jpeg" width="95%"  alt="Glassmorphic Image"> }
+            @if (valorNo == 1) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/aprendizaje.png" width="75%"  alt="Glassmorphic Image"> }
+            @if (valorNo == 2) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/disponibilidad.png" width="75%"  alt="Glassmorphic Image"> }
+            @if (valorNo == 3) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/Innovacion.png" width="75%"  alt="Glassmorphic Image"> }
+            @if (valorNo == 4) {  <img class="rounded d-block mx-auto"  style="margin-bottom: 20px;" src="../assets/img/Trabajoenequipo.png" width="75%"  alt="Glassmorphic Image"> }
             <div class="text-center">
             @if (valorNo == 1) {
               <div>
-                <h5 class="card-title">Aprendizaje continuo</h5>  
+           <!--      <h5 class="card-title">Aprendizaje continuo</h5>  --> 
                 <div class="greenline"></div>
                 
               </div>
             }
             @else if (valorNo == 2) {
               <div>
-                <h5 class="card-title">Disponibilidad</h5>
+                <!-- <h5 class="card-title">Disponibilidad</h5> -->
                 <div class="blueline"></div>
               </div>
             }
             @else if (valorNo == 3) {
               <div>
-                <h5 class="card-title">Innovación</h5>
+              <!--   <h5 class="card-title">Innovación</h5> -->
                 <div class="redline"></div>
               </div>
             }
             @else if (valorNo == 4) {
               <div>
-                <h5 class="card-title">Trabajo en equipo</h5>
+               <!--  <h5 class="card-title">Trabajo en equipo</h5> -->
                 <div class="line"></div>
               </div>
             }
@@ -133,19 +133,19 @@
                           <div class="box nine" (click)="setAnswer(i, 9)" [ngClass]="{'selected': question.answer === 9}">9</div>
                           <div class="box ten" (click)="setAnswer(i, 10)" [ngClass]="{'selected': question.answer === 10}">10</div>
                         </div>
-                        <button *ngIf="question.text != 'Puntos positivos' && question.text != 'Puntos de mejora'" mat-button [disabled]="!currentQuestionAnswered"  (click)="advanceQuestion()" color="accent">Continuar</button>
+                        <button class="float-end" *ngIf="question.text != 'Puntos positivos' && question.text != 'Puntos de mejora'" mat-button [disabled]="!currentQuestionAnswered"  (click)="advanceQuestion()" color="accent">Continuar</button>
 
                         <mat-form-field *ngIf="question.text == 'Puntos positivos'" class="example-full-width">
                           <mat-label>Describir los puntos positivos del colaborador con respecto al valor</mat-label>
                           <textarea   [formControl]="puntospositivos" matInput placeholder="Anote puntos positivos..."></textarea>
-                          <button mat-button [disabled]="!puntospositivos.valid" (click)="setAnswer(i,98)" color="accent">Continuar</button>
+                          <button  mat-button class="float-end" [disabled]="!puntospositivos.valid" (click)="setAnswer(i,98)" color="accent">Continuar</button>
                         </mat-form-field>
 
 
                         <mat-form-field *ngIf="question.text == 'Puntos de mejora'" class="example-full-width">
                           <mat-label>Describir los puntos de mejora del colaborador con respecto al valor</mat-label>
                           <textarea    [formControl]="puntosdemejora" matInput placeholder="Anote puntos de mejora..."></textarea>
-                          <button mat-button [disabled]="!puntosdemejora.valid"  (click)="setAnswer(i,99)" color="accent">Continuar</button>
+                          <button mat-button class="float-end" [disabled]="!puntosdemejora.valid"  (click)="setAnswer(i,99)" color="accent">Continuar</button>
                         </mat-form-field>
                       </div>
                     </div>
