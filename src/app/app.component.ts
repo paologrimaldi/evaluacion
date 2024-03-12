@@ -228,35 +228,18 @@ ngOnInit(): void {
   }
 
   public employees = [
-    {
-        "NO.": "1",
-        "NOMBRE": "Aroche Diaz Karen Mariela",
-        "Departamento": "Comercial"
-    },
-    {
-        "NO.": "2",
-        "NOMBRE": "Godínez Orozco Sindy Evelin",
-        "Departamento": "Comercial"
-    },
+   
+   
     {
         "NO.": "3",
         "NOMBRE": "Martínez Puac Daniel Esteban",
         "Departamento": "Comercial"
     },
-    {
-        "NO.": "4",
-        "NOMBRE": "Patzan Rosales Erick Jonathan",
-        "Departamento": "Comercial"
-    },
+  
     {
         "NO.": "5",
         "NOMBRE": "Locon Cirin Ervin Manfredy Arturo",
         "Departamento": "Proyectos"
-    },
-    {
-        "NO.": "6",
-        "NOMBRE": "Garcia Morales Andrea Patricia",
-        "Departamento": "Recursos Humanos"
     },
     {
         "NO.": "7",
@@ -293,16 +276,8 @@ ngOnInit(): void {
         "NOMBRE": "González Pacay Dulby Daniel",
         "Departamento": "Finanzas"
     },
-    {
-        "NO.": "14",
-        "NOMBRE": "Lemus Monzón Selvin Miguel",
-        "Departamento": "Auditoria"
-    },
-    {
-        "NO.": "15",
-        "NOMBRE": "Mayorga Castillo Jacqueline Andrea",
-        "Departamento": "Finanzas"
-    },
+   
+  
     {
         "NO.": "16",
         "NOMBRE": "Morales Paredes Melvyn Donaldo",
@@ -323,11 +298,7 @@ ngOnInit(): void {
         "NOMBRE": "Juaréz Bonilla Georgina Irasema",
         "Departamento": "Operaciones"
     },
-    {
-        "NO.": "20",
-        "NOMBRE": "Ramirez Gonzalez Julio Rodolfo",
-        "Departamento": "Operaciones"
-    },
+   
     {
         "NO.": "21",
         "NOMBRE": "Cac Seb Orlando",
@@ -358,11 +329,7 @@ ngOnInit(): void {
         "NOMBRE": "Menéndez Guillen Carlos Humberto",
         "Departamento": "Operaciones"
     },
-    {
-        "NO.": "27",
-        "NOMBRE": "Morales Zepeda Edras Nehemias",
-        "Departamento": "Operaciones"
-    },
+   
     {
         "NO.": "28",
         "NOMBRE": "Rodriguez Paz Douglas Esteven",
@@ -383,16 +350,8 @@ ngOnInit(): void {
         "NOMBRE": "Lopez Velasquez Pedro",
         "Departamento": "Proyectos"
     },
-    {
-        "NO.": "32",
-        "NOMBRE": "Meneses Sierra Hannia",
-        "Departamento": "Proyectos"
-    },
-    {
-        "NO.": "33",
-        "NOMBRE": "Perez Morales Miguel Eduardo",
-        "Departamento": "Proyectos"
-    },
+   
+  
     {
         "NO.": "34",
         "NOMBRE": "Velásquez Chacón Diego David",
@@ -443,11 +402,7 @@ ngOnInit(): void {
         "NOMBRE": "Perez Ac Yoon Anderson",
         "Departamento": "Operaciones"
     },
-    {
-        "NO.": "44",
-        "NOMBRE": "Rocché Tzunú Juan Ricardo",
-        "Departamento": "Operaciones"
-    },
+   
     {
         "NO.": "45",
         "NOMBRE": "García Corzantes Nelson José Guillermo",
@@ -573,11 +528,7 @@ ngOnInit(): void {
         "NOMBRE": "Rivera Gonzalez Yorshua Edilberto ",
         "Departamento": "Operaciones"
     },
-    {
-        "NO.": "70",
-        "NOMBRE": "Diaz Caal Elmer Alejandro ",
-        "Departamento": "Operaciones"
-    },
+  
     {
         "NO.": "71",
         "NOMBRE": "Caal Caal William Alexander ",
@@ -633,21 +584,13 @@ ngOnInit(): void {
         "NOMBRE": "Pérez Zarceño Kendall Haroldo",
         "Departamento": "Proyectos"
     },
-    {
-        "NO.": "82",
-        "NOMBRE": "Escobar Catzún Edgar Homero",
-        "Departamento": "Finanzas"
-    },
+   
     {
         "NO.": "83",
         "NOMBRE": "Cal Cojoc Maynor Alberto",
         "Departamento": "Operaciones"
     },
-    {
-        "NO.": "84",
-        "NOMBRE": "Bor Galvez José Manuel",
-        "Departamento": "Andamiaje"
-    },
+ 
     {
         "NO.": "85",
         "NOMBRE": "Ovando Gomez Maria Fernanda",
