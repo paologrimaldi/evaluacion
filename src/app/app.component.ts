@@ -630,9 +630,45 @@ ngOnInit(): void {
         "NO.": "92",
         "NOMBRE": "Canel Pu Jeremias",
         "Departamento": "Andamiaje"
+    },
+
+    {
+        "NO.": "93",
+        "NOMBRE": "Aroche Diaz Karen Mariela",
+        "Departamento": "Gerencia"
+    },
+    {
+        "NO.": "94",
+        "NOMBRE": "Godínez Orozco Sindy Evelin",
+        "Departamento": "Gerencia"
+    },
+    {
+        "NO.": "95",
+        "NOMBRE": "Lemus Monzón Selvin Miguel",
+        "Departamento": "Gerencia"
+    },
+    {
+        "NO.": "96",
+        "NOMBRE": "Ramirez Gonzalez Julio Rodolfo",
+        "Departamento": "Gerencia"
+    },
+    {
+        "NO.": "97",
+        "NOMBRE": "Meneses Sierra Hannia",
+        "Departamento": "Gerencia"
+    },
+    {
+        "NO.": "98",
+        "NOMBRE": "Bor Galvez José Manuel",
+        "Departamento": "Gerencia"
+    },
+    {
+        "NO.": "99",
+        "NOMBRE": "Escobar Catzún Edgar Homero",
+        "Departamento": "Gerencia"
     }
 ]
 public findDepto(key: string): string { const departamento = this.DepartamentosHash.find(obj => Object.keys(obj)[0] === key); return departamento ? departamento[key] : null; }
-public DepartamentosHash: Array<any> = [{"XHSH": "Andamiaje"},{"DFCW": "Proyectos"},{"WMVS": "Operaciones"},{"WOUD": "Finanzas"},{"KJRE": "Comercial"}, {"JRRE": "Recursos Humanos"}, {"MWXD": "Auditoria"}]
+public DepartamentosHash: Array<any> = [{"XHSH": "Andamiaje"},{"DFCW": "Proyectos"},{"WMVS": "Operaciones"},{"WOUD": "Finanzas"},{"KJRE": "Comercial"}, {"JRRE": "Recursos Humanos"}, {"MWXD": "Auditoria"}, {"GHRE": "Gerencia"}]
 }
 
